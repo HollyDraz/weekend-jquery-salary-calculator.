@@ -12,3 +12,8 @@ table, th, td{
 .total{
     text-align: right;
 }
+
+.info-input{
+    border: 1px solid black;
+    
+}

@@ -27,9 +27,10 @@ function addEmployee(){
    <td>${id}</td>
    <td>${employeeTitle}</td>
    <td>${employeeSalary}</td>
-   <td><button id="delete-button">delete</button></td>
+  <td><button id="delete-button">delete</button></td>
   </tr>
-`);
+  `);
+  
 }
 
 
@@ -37,7 +38,6 @@ function addEmployee(){
 // function now needed to remove selected employees
 function removeEmployee(){
     console.log("you're fired");
-    //$('#employee-info').remove();
-    
+    $(this).parent().remove();
 
 }
