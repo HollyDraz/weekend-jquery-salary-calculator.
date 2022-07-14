@@ -17,6 +17,7 @@ function addEmployee(){
     let id =$('#ID-input').val();
     let employeeTitle = $('#title-input').val();
     let employeeSalary =$('#salary-input').val();
+    //let deleteButton = $('#delete-button').val();
     console.log(firstName);
     $('#employee-table').append(`
     <tr>
@@ -25,8 +26,7 @@ function addEmployee(){
    <td>${id}</td>
    <td>${employeeTitle}</td>
    <td>${employeeSalary}</td>
-   
-
+   <td><button id="delete-button">delete</button></td>
   </tr>
 `);
 
