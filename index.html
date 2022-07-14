@@ -10,10 +10,9 @@
     <title>Salary Calculator</title>
 </head>
 <body>
+<div id="content">
    <header>Salary Calculator</header>
-    <div id="add-employe">
    <h1>Add Employee</h1>
-   
    <label for="first-input" class="info-input" data="info-input">First Name</label>
    <input
     type="text"
@@ -39,11 +38,11 @@
     type="text"
     id="salary-input"/>
    <button id="submit-button" class="info-input" >Submit</button>
-    </div>
+</div>
 
 
 
-    <div id="employee-rows">
+    <div id="table-input">
         <h2>Employees</h2>
    <table id="employee-table">
     <tr>
@@ -54,7 +53,7 @@
         <th>Annual Salary</th>
         <th>  </th>
     </tr>
-    <tr id="employee-info">
+    <tr">
         <td>Holly</td>
         <td>Draz</td>
         <td>1313</td>
@@ -62,14 +61,14 @@
         <td>0</td>
         <td><button id="delete-button">delete</button></td>
     </tr>
-    
-        
-     
    </table>
-    </div>
+</div>
+    
 
     <div id="monthly-total">
     <h1 class="total"> Total Monthly: <span>$0.00 </span></h1>
     </div>
+
+
 </body>
 </html>

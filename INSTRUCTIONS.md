@@ -23,12 +23,15 @@ Create an application that records employee salaries and adds salaries up to rep
 -[x] add delete button to each row
 
 ## Part 2 Delete Employees:
--[] then create a function that allows us to delete a selected employee on the click 
+-[x] then create a function that allows us to delete a selected employee on the click 
 -[x]delete button calls function when tested 
 
 ## Part 3 Monthly total:
 -[] create a function that then finds the sum of the employees that are in the table 
     -[] note: its only going to add the salaries 
+
+
+## Stretch Goals 
     - [] once an employee is removed it should also subtract that from the total
 
 

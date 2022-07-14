@@ -5,7 +5,7 @@ $(document).ready(readyNow);
 function readyNow(){
     console.log('rock and roll!');
     $('#submit-button').on('click', addEmployee );
-    $('#delete-button').on('click', removeEmployee );
+    $('body').on('click','#delete-button', removeEmployee );
    //$('#employee-info').on('click', removeEmployee);
 }
 
@@ -38,6 +38,6 @@ function addEmployee(){
 // function now needed to remove selected employees
 function removeEmployee(){
     console.log("you're fired");
-    $(this).parent().remove();
+    $(this).parent().parent().remove();
 
 }
