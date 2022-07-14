@@ -7,6 +7,7 @@ function readyNow(){
     $('#submit-button').on('click', addEmployee );
     $('body').on('click','#delete-button', removeEmployee );
    //$('#employee-info').on('click', removeEmployee);
+   salaryTotal();
 }
 
 // create function that adds 
@@ -40,4 +41,14 @@ function removeEmployee(){
     console.log("you're fired");
     $(this).parent().parent().remove();
 
+}
+
+/// function that adds the salaries of the employees added
+let moneyTotal;
+function salaryTotal(){
+    console.log('money talks!');
+    moneyTotal = ;
+    $('#total-amount').html(`
+     <span id="total-amount">${moneyTotal}</span>
+    `)
 }
