@@ -3,20 +3,20 @@ Create an application that records employee salaries and adds salaries up to rep
 
 
 ## To Do: 
--[] Source all files 
+-[x] Source all files 
 -[] create outline for dom in html 
     -[]outline includes:
-        - title 
-        - header
-        - table 
-        -input fields for first name 
-        -last name 
-        -id 
-        -title 
-        -annual salary
-        -submit button 
+        - [x]title 
+        -[x] header
+        -[x] table 
+        -[x] input fields for first name 
+        -[x] last name 
+        -[x] id 
+        -[x] title 
+        -[x] annual salary
+        -[] submit button 
 
--[] add delete button to go with each employee 
+-[x] add delete button to go with each employee 
 
 
 

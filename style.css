@@ -1,0 +1,9 @@
+header{
+    text-align: center;
+    font-size: 75px;
+    background-color: darkgoldenrod;
+}
+table, th, td{
+    border: 1px solid black;
+
+}
