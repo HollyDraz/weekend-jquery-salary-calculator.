@@ -7,7 +7,7 @@ function readyNow(){
     $('#submit-button').on('click', addEmployee );
     $('body').on('click','#delete-button', removeEmployee );
    //$('#employee-info').on('click', removeEmployee);
-   salaryTotal();
+   //salaryTotal();
 }
 
 // create function that adds 
@@ -19,7 +19,7 @@ function addEmployee(){
     let lastName =$('#last-input').val();
     let id =$('#ID-input').val();
     let employeeTitle = $('#title-input').val();
-    let employeeSalary =$('#salary-input').val();
+    let employeePayment =$('#salary-input').val();
     console.log(firstName);
     $('#employee-table').append(`
     <tr>
@@ -27,11 +27,15 @@ function addEmployee(){
    <td>${lastName}</td>
    <td>${id}</td>
    <td>${employeeTitle}</td>
-   <td>${employeeSalary}</td>
+   <td>${employeePayment}</td>
   <td><button id="delete-button">delete</button></td>
   </tr>
   `);
-  
+  moneyTotal = employeePayment;
+   $('#total-amount').html(`
+    <span id="total-amount">${moneyTotal}</span>
+   `)
+   console.log(moneyTotal)
 }
 
 
@@ -44,11 +48,17 @@ function removeEmployee(){
 }
 
 /// function that adds the salaries of the employees added
-let moneyTotal;
-function salaryTotal(){
-    console.log('money talks!');
-    moneyTotal = ;
-    $('#total-amount').html(`
-     <span id="total-amount">${moneyTotal}</span>
-    `)
+// create an array that adds all the totals together? 
+
+
+// function console out - see if can make one large function? 
+/**function salaryTotal(){
+   // console.log('money talks!');
+   moneyTotal = 30
+   $('#total-amount').html(`
+    <span id="total-amount">${moneyTotal}</span>
+   `)
+   console.log(moneyTotal)
+    return moneyTotal;
 }
+*/

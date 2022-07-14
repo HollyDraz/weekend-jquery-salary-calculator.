@@ -28,6 +28,7 @@ Create an application that records employee salaries and adds salaries up to rep
 
 ## Part 3 Monthly total:
 -[] create a function that then finds the sum of the employees that are in the table 
+    -[]show to total of the additon of all the employee salaries 
     -[] note: its only going to add the salaries 
 
 
