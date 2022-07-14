@@ -2,7 +2,7 @@
 Create an application that records employee salaries and adds salaries up to report monthly costs. 
 
 
-## To Do: 
+## To Do HTML: 
 -[x] Source all files 
 -[] create outline for dom in html 
     -[]outline includes:
@@ -14,7 +14,7 @@ Create an application that records employee salaries and adds salaries up to rep
         -[x] id 
         -[x] title 
         -[x] annual salary
-        -[] submit button 
+        -[x] submit button 
 
 -[x] add delete button to go with each employee 
 
