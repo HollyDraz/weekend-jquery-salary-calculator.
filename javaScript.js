@@ -7,8 +7,21 @@ function readyNow(){
     $('#submit-button').on('click', addEmployee );
 }
 
-// create function that adds employees to table on 'click'
+// create function that adds 
+//employees to table on 'click'
 
 function addEmployee(){
     console.log("added new employee");
+    let firstName =$('#first-input').val();
+    console.log(firstName);
+    $('#employee-table').append(`
+    <tr>
+   <td>${firstName}</td>
+
+  </tr>
+`);
+
 }
+
+// console.log("add notes");
+;
