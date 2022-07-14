@@ -1,6 +1,26 @@
 # Weekend Challenge: jQuery Salary Calculator
 Create an application that records employee salaries and adds salaries up to report monthly costs. 
 
+
+## To Do: 
+-[] Source all files 
+-[] create outline for dom in html 
+    -[]outline includes:
+        - title 
+        - header
+        - table 
+        -input fields for first name 
+        -last name 
+        -id 
+        -title 
+        -annual salary
+        -submit button 
+
+-[] add delete button to go with each employee 
+
+
+
+
 ## Topics Covered
 - JavaScript
 - jQuery - Selectors, append, and event handling
