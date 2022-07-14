@@ -15,10 +15,17 @@ Create an application that records employee salaries and adds salaries up to rep
         -[x] title 
         -[x] annual salary
         -[x] submit button 
-
 -[x] add delete button to go with each employee 
 
+## Part one of JS append Employees:
+-[x]create ready now function and test 
+-[]create a function that takes the employee input and on click adds it to the table.
 
+## Part 2 Delete Employees:
+-[] then create a function that allows us to delete a selected employee on the click 
+
+## Part 3 Monthly total:
+-[] create a function that then finds the sum of the employees that are in the table 
 
 
 ## Topics Covered
