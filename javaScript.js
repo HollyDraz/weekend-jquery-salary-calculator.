@@ -6,6 +6,7 @@ function readyNow(){
     console.log('rock and roll!');
     $('#submit-button').on('click', addEmployee );
     $('#delete-button').on('click', removeEmployee );
+   //$('#employee-info').on('click', removeEmployee);
 }
 
 // create function that adds 
@@ -31,8 +32,12 @@ function addEmployee(){
 `);
 }
 
+
+
 // function now needed to remove selected employees
 function removeEmployee(){
     console.log("you're fired");
+    //$('#employee-info').remove();
+    
 
 }
