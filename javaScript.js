@@ -5,6 +5,7 @@ $(document).ready(readyNow);
 function readyNow(){
     console.log('rock and roll!');
     $('#submit-button').on('click', addEmployee );
+    $('#delete-button').on('click', removeEmployee );
 }
 
 // create function that adds 
@@ -17,7 +18,6 @@ function addEmployee(){
     let id =$('#ID-input').val();
     let employeeTitle = $('#title-input').val();
     let employeeSalary =$('#salary-input').val();
-    //let deleteButton = $('#delete-button').val();
     console.log(firstName);
     $('#employee-table').append(`
     <tr>
@@ -29,8 +29,10 @@ function addEmployee(){
    <td><button id="delete-button">delete</button></td>
   </tr>
 `);
-
 }
 
-// console.log("add notes");
-;
+// function now needed to remove selected employees
+function removeEmployee(){
+    console.log("you're fired");
+
+}
