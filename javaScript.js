@@ -31,7 +31,15 @@ function addEmployee(){
   <td><button id="delete-button">delete</button></td>
   </tr>
   `);
-  moneyTotal = employeePayment;
+// create loop th at adds employee payments together
+sum = 0;
+for(let i=0; i < employeePayment; i++){
+     sum += i;
+}
+console.log(sum);
+
+// changes the total on the page
+  moneyTotal = sum;
    $('#total-amount').html(`
     <span id="total-amount">${moneyTotal}</span>
    `)
