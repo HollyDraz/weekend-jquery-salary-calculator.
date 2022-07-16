@@ -6,9 +6,21 @@ function readyNow(){
     console.log('rock and roll!');
     $('#submit-button').on('click', addEmployee );
     $('body').on('click','#delete-button', removeEmployee );
-   //$('#employee-info').on('click', removeEmployee);
-   //salaryTotal();
+
+   // on click push to array 
+   
 }
+
+
+//array to push employee payments to 
+let sum = [];
+let grandTotal = 0;
+for(let i=0; i < sum.length; i++){
+   grandTotal =  grandTotal + sum[i];
+}
+
+console.log(grandTotal);
+
 
 // create function that adds 
 //employees to table on 'click'
@@ -35,13 +47,10 @@ function addEmployee(){
 // create loop th at adds employee payments together?
 // give the employee input an id 
 //so we can fetch that data
-sum = 0;
-  //use numeric to make sure it only adds the 
-  //number and nothing else
-  if(employeePayment){
-    sum = employeePayment;
-  
-}
+//let sum = [2,3,4,5];
+
+//for loop
+
 
 
 
