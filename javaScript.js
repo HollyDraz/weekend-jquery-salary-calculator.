@@ -4,7 +4,7 @@ $(document).ready(readyNow);
 // ready now function for click holders
 function readyNow(){
     console.log('rock and roll!');
-    $('#submit-button').on('click', addEmployee );
+    $('#submit-button').on('click', addEmployee);
     $('body').on('click','#delete-button', removeEmployee );
 
    // on click push to array 
@@ -12,14 +12,12 @@ function readyNow(){
 }
 
 
-//array to push employee payments to 
-let sum = [];
-let grandTotal = 0;
-for(let i=0; i < sum.length; i++){
-   grandTotal =  grandTotal + sum[i];
-}
 
-console.log(grandTotal);
+
+
+
+let allEmployee = [];
+let grandTotal = 0;
 
 
 // create function that adds 
@@ -27,7 +25,7 @@ console.log(grandTotal);
 
 function addEmployee(){
     console.log("added new employee");
-    
+    //object
     let firstName =$('#first-input').val();
     let lastName =$('#last-input').val();
     let id =$('#ID-input').val();
@@ -44,24 +42,41 @@ function addEmployee(){
   <td><button id="delete-button">delete</button></td>
   </tr>
   `);
-// create loop th at adds employee payments together?
-// give the employee input an id 
-//so we can fetch that data
-//let sum = [2,3,4,5];
 
-//for loop
+  //new object employee
+  const newEmployee = {
+    first: firstName,
+    last: lastName,
+    Id: id,
+    title: employeeTitle,
+    salary: employeePayment
+  }
+console.log(newEmployee);
+
+ allEmployee.push(newEmployee);
+
+
+/// NONE of these are adding properly
+
+//allEmployee.forEach(newEmployee => {
+  //  grandTotal += newEmployee.salary;
+  //});
+
+
+ //for(let i = 0; i < allEmployee.length; i++){
+   // grandTotal += allEmployee[i].salary;
+ //}
+  console.log('my grand total is', grandTotal); 
 
 
 
 
-
-// changes the total on the page
-moneyTotal = sum;
+   // changes the total on the page
+   moneyTotal = grandTotal;
    $('#total-amount').html(`
     <span id="total-amount">$ ${moneyTotal} </span>
    `)
    console.log(moneyTotal);
-  
 }
 
 
