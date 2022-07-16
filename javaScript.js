@@ -15,6 +15,7 @@ function readyNow(){
 
 function addEmployee(){
     console.log("added new employee");
+    
     let firstName =$('#first-input').val();
     let lastName =$('#last-input').val();
     let id =$('#ID-input').val();
@@ -31,20 +32,27 @@ function addEmployee(){
   <td><button id="delete-button">delete</button></td>
   </tr>
   `);
-// create loop th at adds employee payments together
-sum = 0;
-for(let i=0; i < employeePayment; i++){
-     sum += i;
-}
-console.log(sum);
+// create loop th at adds employee payments together?
+// give the employee input an id 
+//so we can fetch that data
+  sum = 0;
+  //use numeric to make sure it only adds the 
+  //number and nothing else
+  if($.isNumeric(employeePayment)){
+    sum = (employeePayment);
+  console.log("my sum is", sum);}
+
+
 
 // changes the total on the page
-  moneyTotal = sum;
+moneyTotal = sum;
    $('#total-amount').html(`
-    <span id="total-amount">${moneyTotal}</span>
+    <span id="total-amount">$${moneyTotal}</span>
    `)
-   console.log(moneyTotal)
+   console.log(moneyTotal);
+  
 }
+
 
 
 
@@ -58,15 +66,3 @@ function removeEmployee(){
 /// function that adds the salaries of the employees added
 // create an array that adds all the totals together? 
 
-
-// function console out - see if can make one large function? 
-/**function salaryTotal(){
-   // console.log('money talks!');
-   moneyTotal = 30
-   $('#total-amount').html(`
-    <span id="total-amount">${moneyTotal}</span>
-   `)
-   console.log(moneyTotal)
-    return moneyTotal;
-}
-*/
