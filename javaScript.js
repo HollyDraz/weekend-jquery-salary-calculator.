@@ -35,19 +35,21 @@ function addEmployee(){
 // create loop th at adds employee payments together?
 // give the employee input an id 
 //so we can fetch that data
-  sum = 0;
+sum = 0;
   //use numeric to make sure it only adds the 
   //number and nothing else
-  if($.isNumeric(employeePayment)){
-    sum = (employeePayment);
-  console.log("my sum is", sum);}
+  if(employeePayment){
+    sum = employeePayment;
+  
+}
+
 
 
 
 // changes the total on the page
 moneyTotal = sum;
    $('#total-amount').html(`
-    <span id="total-amount">$${moneyTotal}</span>
+    <span id="total-amount">$ ${moneyTotal} </span>
    `)
    console.log(moneyTotal);
   

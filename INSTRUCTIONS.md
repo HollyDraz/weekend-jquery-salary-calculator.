@@ -30,6 +30,8 @@ Create an application that records employee salaries and adds salaries up to rep
 -[] create a function that then finds the sum of the employees that are in the table 
     -[]show to total of the additon of all the employee salaries 
     -[] note: its only going to add the salaries 
+    -[] create a limit on the total 
+    -[] if total is exceeded have the page turn red 
 
 
 ## Stretch Goals 
