@@ -1,15 +1,24 @@
 header{
+  
     text-align: center;
     font-size: 75px;
     background-color: darkgoldenrod;
 }
+
+body{
+    font-family: monospace;
+    background-image: url("https://wallpaperaccess.com/full/3957929.jpg");
+}
 table, th, td{
+    
     border: 1px solid black;
     margin: 10px;
+
 
 }
 
 .total{
+  
     text-align: right;
     font-size: x-large; 
 }

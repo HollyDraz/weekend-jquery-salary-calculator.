@@ -74,6 +74,7 @@ grandTotal = 0;
    if(moneyTotal > 20000){
     console.log("over budget");
     $("h3").css("background-color", "red");
+    alert('we are over budget!').fadeIn();
 
 }
 
