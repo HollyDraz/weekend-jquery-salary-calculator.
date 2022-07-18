@@ -15,6 +15,7 @@ function readyNow(){
 
 
 
+// where the object of a the new employee will be added 
 
 let allEmployee = [];
 let grandTotal = 0;
@@ -56,16 +57,11 @@ console.log(newEmployee);
  allEmployee.push(newEmployee);
 
 
-/// NONE of these are adding properly
+grandTotal = 0;
+ for(let i = 0; i < allEmployee.length; i++){
+    grandTotal += parseInt(allEmployee[i].salary);
+ }
 
-//allEmployee.forEach(newEmployee => {
-  //  grandTotal += newEmployee.salary;
-  //});
-
-
- //for(let i = 0; i < allEmployee.length; i++){
-   // grandTotal += allEmployee[i].salary;
- //}
   console.log('my grand total is', grandTotal); 
 
 
