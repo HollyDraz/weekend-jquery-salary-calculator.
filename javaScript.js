@@ -61,11 +61,7 @@ grandTotal = 0;
  for(let i = 0; i < allEmployee.length; i++){
     grandTotal += parseInt(allEmployee[i].salary);
  }
-
   console.log('my grand total is', grandTotal); 
-
-
-
 
    // changes the total on the page
    moneyTotal = grandTotal;
@@ -73,6 +69,15 @@ grandTotal = 0;
     <span id="total-amount">$ ${moneyTotal} </span>
    `)
    console.log(moneyTotal);
+/// if statment to set cap on page 
+
+   if(moneyTotal > 20000){
+    console.log("over budget");
+    $("h3").css("background-color", "red");
+
+}
+
+
 }
 
 

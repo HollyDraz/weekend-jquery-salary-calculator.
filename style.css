@@ -11,7 +11,7 @@ table, th, td{
 
 .total{
     text-align: right;
-     
+    font-size: x-large; 
 }
 
 .info-input{
