@@ -59,7 +59,7 @@ console.log(newEmployee);
 
 grandTotal = 0;
  for(let i = 0; i < allEmployee.length; i++){
-    grandTotal += parseInt(allEmployee[i].salary);
+    grandTotal += parseInt((allEmployee[i].salary)/12) ;
  }
   console.log('my grand total is', grandTotal); 
 
